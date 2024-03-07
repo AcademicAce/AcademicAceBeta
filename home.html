@@ -15,9 +15,8 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
     }
 
     .button-container {
@@ -48,13 +47,48 @@
     .rounded-button i {
       margin-right: 8px;
     }
+
+    .page-content {
+      margin-top: 30px;
+    }
+
+    .top-buttons {
+      display: flex;
+      justify-content: space-around;
+      background-color: #3498db;
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .top-button {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
+  <div class="top-buttons">
+    <a href="#" class="top-button">Button 1</a>
+    <a href="#" class="top-button">Button 2</a>
+    <a href="#" class="top-button">Button 3</a>
+    <a href="#" class="top-button">Button 4</a>
+    <a href="#" class="top-button">Button 5</a>
+  </div>
+
   <div class="button-container">
     <a href="index.html" class="rounded-button"><i class="fas fa-home"></i> Home</a>
     <a href="about.html" class="rounded-button"><i class="fas fa-info-circle"></i> About</a>
     <a href="contact.html" class="rounded-button"><i class="fas fa-envelope"></i> Contact</a>
+  </div>
+
+  <div class="page-content">
+    <!-- Your content goes here -->
+    <p>This is the home page content.</p>
   </div>
 
   <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
