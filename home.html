@@ -11,12 +11,13 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      background: linear-gradient(135deg, #3498db, #9b59b6);
       margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 100vh;
     }
 
     .button-container {
@@ -45,6 +46,7 @@
     .square-button-container {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       width: 100%;
       margin-top: 10px;
     }
@@ -91,12 +93,24 @@
   <div class="square-button-container">
     <a href="#" class="square-button">Game 1</a>
     <a href="#" class="square-button">Game 2</a>
-    <a href="#" class="square-button">Game 3</a>
+    <a href="#" class="square-button" onclick="openNewWindow('http://nav.apusapps.com/br/game/coreball/index.html')">Game 3</a>
     <a href="#" class="square-button">Game 4</a>
     <a href="#" class="square-button">Game 5</a>
+    <!-- Additional Buttons -->
+    <a href="#" class="square-button">Game 6</a>
+    <a href="#" class="square-button">Game 7</a>
+    <a href="#" class="square-button">Game 8</a>
+    <a href="#" class="square-button">Game 9</a>
+    <a href="#" class="square-button">Game 10</a>
   </div>
 
   <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function openNewWindow(url) {
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
