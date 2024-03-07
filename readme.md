@@ -1,1 +1,1 @@
-# BETA DESIGNS for other website
+# BETA DESIGNS for other website // POWERED BY CHATGBT (OPENAI)
