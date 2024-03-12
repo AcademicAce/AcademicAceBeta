@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>🌍| AcademicAce |🌍</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -11,106 +11,60 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #3498db, #9b59b6);
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
     .button-container {
       text-align: center;
-      margin-top: 60px;
     }
 
-    .top-buttons {
-      display: flex;
-      justify-content: space-around;
-      background-color: #3498db;
-      padding: 10px;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .top-button {
-      color: #fff;
-      text-decoration: none;
+    .rounded-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
       font-weight: bold;
-      font-size: 16px;
-    }
-
-    .square-button-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    .square-button {
-      width: 150px;
-      height: 150px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      font-weight: bold;
+      text-align: center;
       text-decoration: none;
+      border-radius: 30px;
       color: #fff;
       background-color: #3498db;
-      border: 2px solid #2980b9;
-      border-radius: 15px;
       transition: background-color 0.3s ease, transform 0.2s ease;
       cursor: pointer;
       margin: 10px;
+      overflow: hidden;
     }
 
-    .square-button:hover {
+    .rounded-button:hover {
       background-color: #2980b9;
       transform: scale(1.05);
+    }
+
+    .rounded-button i {
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="top-buttons">
-    <a href="#" class="top-button" onclick="openNewWindow('http://nav.apusapps.com/br/game/coreball/index.html')">Core Ball</a>
-    <a href="#" class="top-button">Button 2</a>
-    <a href="#" class="top-button">Button 3</a>
-    <a href="#" class="top-button">Button 4</a>
-    <a href="#" class="top-button">Button 5</a>
-  </div>
-
   <div class="button-container">
-    <a href="index.html" class="rounded-button"><i class="fas fa-home"></i> Home</a>
-    <a href="about.html" class="rounded-button"><i class="fas fa-info-circle"></i> About</a>
-    <a href="contact.html" class="rounded-button"><i class="fas fa-envelope"></i> Contact</a>
-  </div>
-
-  <div class="square-button-container">
-    <a href="#" class="square-button">Game 1</a>
-    <a href="#" class="square-button">Game 2</a>
-   <a href="#" class="square-button">Game 2</a>
-    <a href="#" class="square-button">Game 4</a>
-    <a href="#" class="square-button">Game 5</a>
-    <!-- Additional Buttons -->
-    <a href="#" class="square-button">Game 6</a>
-    <a href="#" class="square-button">Game 7</a>
-    <a href="#" class="square-button">Game 8</a>
-    <a href="#" class="square-button">Game 9</a>
-    <a href="#" class="square-button">Game 10</a>
+    <a href="BetaTesting/CoreBall/nav.apusapps.com/br/game/coreball/index.html" class="rounded-button"><i class="fas fa-gamepad"></i> CoreBall</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game1</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game2</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game3</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game4</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game5</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game6</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game7</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game8</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game9</a>
   </div>
 
   <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    function openNewWindow(url) {
-      window.open(url, '_blank');
-    }
-  </script>
 </body>
 </html>
