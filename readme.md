@@ -6,5 +6,5 @@ Send us game suggestions (use issues)
 Q: Do you have a discord?
 A: No.
 
-Q: Wamma work on a project
+Q: Wanna work on a project
 A: No.
